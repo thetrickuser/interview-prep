@@ -5,7 +5,7 @@ import styles from "./styles.module.css";
 const FeatureList = [
   {
     title: "Java Interview Mastery",
-    Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
+    Svg: require("@site/static/img/Java.svg").default,
     description: (
       <>
         Master Java fundamentals, OOP concepts, data structures, and algorithms
@@ -15,7 +15,7 @@ const FeatureList = [
   },
   {
     title: "Spring Boot Excellence",
-    Svg: require("@site/static/img/undraw_docusaurus_tree.svg").default,
+    Svg: require("@site/static/img/Spring.svg").default,
     description: (
       <>
         Dive deep into Spring Boot, microservices, REST APIs, and enterprise
@@ -25,7 +25,7 @@ const FeatureList = [
   },
   {
     title: "React Development Skills",
-    Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
+    Svg: require("@site/static/img/React.svg").default,
     description: (
       <>
         Build strong React foundations with hooks, state management, performance
@@ -35,7 +35,7 @@ const FeatureList = [
   },
   {
     title: "SQL Query Proficiency",
-    Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
+    Svg: require("@site/static/img/SQL Developer.svg").default,
     description: (
       <>
         Learn database design, complex queries, optimization, and data modeling

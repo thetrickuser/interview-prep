@@ -1,40 +1,24 @@
 // @ts-check
-// `@type` JSDoc annotations allow editor autocompletion and type checking
-// (when paired with `@ts-check`).
-// There are various equivalent ways to declare your Docusaurus config.
-// See: https://docusaurus.io/docs/api/docusaurus-config
 
 import { themes as prismThemes } from "prism-react-renderer";
-
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Interview Vault",
   tagline: "Practice -> Perform -> Progress -> Repeat",
-  // favicon: 'img/favicon.ico',
 
-  // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
 
-  // Set the production url of your site here
-  url: "https://interview-prep.adhyandas.dev",
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
+  url: "https://docs.adhyandas.dev",
   baseUrl: "/",
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: "thetrickuser", // Usually your GitHub org/user name.
-  projectName: "interview-prep", // Usually your repo name.
-
+  organizationName: "thetrickuser",
+  projectName: "interview-prep",
+  deploymentBranch: "gh-pages",
   onBrokenLinks: "throw",
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: "en",
     locales: ["en"],
@@ -43,13 +27,10 @@ const config = {
   presets: [
     [
       "classic",
-      /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
+      {
         docs: {
           sidebarPath: "./sidebars.js",
           routeBasePath: "/",
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
             "https://github.com/thetrickuser/interview-prep/edit/main/docs/",
         },
@@ -59,11 +40,6 @@ const config = {
             type: ["rss", "atom"],
             xslt: true,
           },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/thetrickuser/interview-prep/edit/main/blog/",
-          // Useful options to enforce blogging best practices
           onInlineTags: "warn",
           onInlineAuthors: "warn",
           onUntruncatedBlogPosts: "warn",
@@ -75,11 +51,8 @@ const config = {
     ],
   ],
 
-  themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
-      // Replace with your project's social card
-      image: "img/docusaurus-social-card.jpg",
+  themeConfig: {
+    image: "img/docusaurus-social-card.jpg",
       colorMode: {
         defaultMode: "dark",
         respectPrefersColorScheme: true,
@@ -138,7 +111,7 @@ const config = {
               },
               {
                 label: "Website",
-                href: "https://adhyandas.dev",
+                href: "https://www.adhyandas.dev",
               },
             ],
           },
@@ -149,7 +122,7 @@ const config = {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
-    }),
+    },
 };
 
 export default config;
