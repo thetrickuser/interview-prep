@@ -6,6 +6,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 const config = {
   title: "Interview Vault",
   tagline: "Practice -> Perform -> Progress -> Repeat",
+  favicon: "img/books.png",
 
   future: {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
@@ -47,82 +48,81 @@ const config = {
         theme: {
           customCss: "./src/css/custom.css",
         },
-      }),
+      },
     ],
   ],
 
   themeConfig: {
-    image: "img/docusaurus-social-card.jpg",
-      colorMode: {
-        defaultMode: "dark",
-        respectPrefersColorScheme: true,
-      },
-      navbar: {
-        title: "Interview Vault",
-        logo: {
-          alt: "Interview Vault Logo",
-          src: "img/logo.svg",
-        },
-        items: [
-          {
-            type: "docSidebar",
-            sidebarId: "javaSidebar",
-            position: "left",
-            label: "Java",
-          },
-          {
-            type: "docSidebar",
-            sidebarId: "springBootSidebar",
-            position: "left",
-            label: "Spring Boot",
-          },
-          {
-            type: "docSidebar",
-            sidebarId: "reactSidebar",
-            position: "left",
-            label: "React",
-          },
-          {
-            type: "docSidebar",
-            sidebarId: "sqlSidebar",
-            position: "left",
-            label: "SQL",
-          },
-          {
-            type: "search",
-            position: "right",
-          },
-          {
-            href: "https://github.com/thetrickuser/interview-prep",
-            label: "GitHub",
-            position: "right",
-          },
-        ],
-      },
-      footer: {
-        style: "dark",
-        links: [
-          {
-            title: "Community",
-            items: [
-              {
-                label: "LinkedIn",
-                href: "https://www.linkedin.com/in/adhyan1011",
-              },
-              {
-                label: "Website",
-                href: "https://www.adhyandas.dev",
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} Adhyan Das. Built with Docusaurus.`,
-      },
-      prism: {
-        theme: prismThemes.github,
-        darkTheme: prismThemes.dracula,
-      },
+    colorMode: {
+      defaultMode: "dark",
+      respectPrefersColorScheme: true,
     },
+    navbar: {
+      title: "Interview Vault",
+      logo: {
+        alt: "Interview Vault Logo",
+        src: "img/books.png",
+      },
+      items: [
+        {
+          type: "docSidebar",
+          sidebarId: "javaSidebar",
+          position: "left",
+          label: "Java",
+        },
+        {
+          type: "docSidebar",
+          sidebarId: "springBootSidebar",
+          position: "left",
+          label: "Spring Boot",
+        },
+        {
+          type: "docSidebar",
+          sidebarId: "reactSidebar",
+          position: "left",
+          label: "React",
+        },
+        {
+          type: "docSidebar",
+          sidebarId: "sqlSidebar",
+          position: "left",
+          label: "SQL",
+        },
+        {
+          type: "search",
+          position: "right",
+        },
+        {
+          href: "https://github.com/thetrickuser/interview-prep",
+          label: "GitHub",
+          position: "right",
+        },
+      ],
+    },
+    footer: {
+      style: "dark",
+      links: [
+        {
+          title: "Community",
+          items: [
+            {
+              label: "LinkedIn",
+              href: "https://www.linkedin.com/in/adhyan1011",
+            },
+            {
+              label: "Website",
+              href: "https://www.adhyandas.dev",
+            },
+          ],
+        },
+      ],
+      copyright: `Copyright © ${new Date().getFullYear()} Adhyan Das. Built with Docusaurus.`,
+    },
+    prism: {
+      theme: prismThemes.github,
+      darkTheme: prismThemes.dracula,
+    },
+  },
 };
 
 export default config;
